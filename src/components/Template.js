@@ -3,7 +3,7 @@ import SignupForm from "./SignupForm";
 import LoginForm from "./LoginForm";
 import Navbar from "./Navbar";
 
-const Template = ({ title, formtype, setIsLoggedIn }) => {
+const Template = ({ formtype }) => {
   return (
     <div className="flex justify-center items-center h-screen">
       <div className="w-11/12 max-w-[450px]">
