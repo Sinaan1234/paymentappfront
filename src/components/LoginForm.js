@@ -47,7 +47,7 @@ const LoginForm = () => {
       localStorage.setItem("token", data.token);
       toast.success("Logged In");
 
-      const get_plan = await fetch("http://localhost:5000/api/user", {
+      const get_plan = await fetch( `${process.env.REACT_APP_BACKEND_URL}/api/user`, {
         method: "GET",
         headers: {
           "Content-Type": "application/json",
